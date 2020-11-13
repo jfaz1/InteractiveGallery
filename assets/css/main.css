@@ -17,8 +17,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
+	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -113,9 +112,9 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 13pt;
+		font-size: 16pt;
 		font-weight: 300;
-		line-height: 1.5;
+		line-height: 1.75;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2567,12 +2566,8 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		position: relative;
+		postiion: relative;
 		margin: -2.5em 0 0 -2.5em;
-	}
-
-	.clicky {
-		cursor: pointer;
 	}
 
 		.tiles article {
@@ -2581,7 +2576,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(25% - 2.5em);
+			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2704,6 +2699,30 @@ input, select, textarea {
 						margin-bottom: 0;
 					}
 
+			.tiles article.style1 > .image:before {
+				background-color: #1f6e00;
+			}
+
+			.tiles article.style2 > .image:before {
+				background-color: #7ecaf6;
+			}
+
+			.tiles article.style3 > .image:before {
+				background-color: #7bd0c1;
+			}
+
+			.tiles article.style4 > .image:before {
+				background-color: #1f6e00;
+			}
+
+			.tiles article.style5 > .image:before {
+				background-color: #1f6e00;
+			}
+
+			.tiles article.style6 > .image:before {
+				background-color: #8499e7;
+			}
+
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
@@ -2804,7 +2823,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 2em 0 0.1em 0 ;
+		padding: 8em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -3291,7 +3310,7 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 76em;
+		max-width: 68em;
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
@@ -3303,10 +3322,3 @@ input, select, textarea {
 			}
 
 		}
-
-		.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}

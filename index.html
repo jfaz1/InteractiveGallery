@@ -4,11 +4,14 @@
 		<title>:: District & Co. : The Gallery ::</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/jcarousel.responsive.css">
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -46,7 +49,7 @@
 						<div class="inner">
 							<header>
 								<img src="images/logo.jpg" class="center" />
-								<div class="form-row text-center" style="padding-top: 35px; padding-bottom: 20px">
+								<div class="form-row text-center" style="padding-top: 55px; padding-bottom: 35px">
 									<div class="col-12">
 										<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="background-color: transparent; ">
 											Sobre nosotros
@@ -428,27 +431,28 @@
 									</a>
 								</article>
 							</section>
-							<h1 class="center">Exposiciones</h1>
-							<hr />
-							<div class="slideshow-wrapper">
-								<div class="slideshow-container">
-									<div class="my-slides">
-										<img src="images/pic04.jpg" id='firstclone'>
-										<img src="images/pic01.jpg">
-										<img src="images/pic02.jpg">
-										<img src="images/pic03.jpg">
-										<img src="images/pic04.jpg">
-										<img src="images/pic01.jpg" id='lastclone'>
+							<h1 class="center" style="padding-top: 50px">Exposiciones</h1>
+							<div class="wrapper" style="padding-top: 20px; padding-bottom: 50px;">				
+								<div class="jcarousel-wrapper">
+									<div class="jcarousel">
+										<ul>
+											<li><img src="images/pic01.jpg" alt="Image 1"></li>
+											<li><img src="images/pic02.jpg" alt="Image 2"></li>
+											<li><img src="images/pic03.jpg" alt="Image 3"></li>
+											<li><img src="images/pic04.jpg" alt="Image 4"></li>
+											<li><img src="images/pic05.jpg" alt="Image 5"></li>
+										</ul>
 									</div>
-									<button class="prev"><i class="fas fa-angle-left"></i></button>
-									<button class="next"><i class="fas fa-angle-right"></i></button>
+									<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+									<p class="jcarousel-pagination"></p>
 								</div>
 							</div>
 						</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<div class="inner">
+						<div class="inner" style="padding-left: 330px;">
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">

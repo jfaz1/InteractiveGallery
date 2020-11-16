@@ -27,7 +27,7 @@ section, summary, time, mark, audio, video {
 	height: 290px;
 	width: 100%;
 	overflow: hidden;
-	-webkit-filter: brightness(30%);
+	-webkit-filter: brightness(50%);
     z-index: -100;
 }
 

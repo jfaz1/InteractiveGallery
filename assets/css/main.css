@@ -3303,13 +3303,13 @@ input, select, textarea {
 
 		}
 
-		.center {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
   width: 50%;
-  text-align:center;
+  text-align: center;
 }
 .collap-content {
 	padding: 0 18px;
@@ -3340,7 +3340,7 @@ input, select, textarea {
 	width: 100%;
 }
 
-/*Slideshow Style*/
+/*Slideshow Styles*/
 
 .slideshow-wrapper {
 	display: flex;
@@ -3354,7 +3354,8 @@ input, select, textarea {
 .slideshow-container {
 	width: 100%;
 	max-width: 1900px;
-	height: 800px;
+	min-height: 50vh;
+	max-height: 50vh;
 	position: relative;
 	margin: 0px;
 	padding: 0px;
@@ -3375,34 +3376,31 @@ input, select, textarea {
 	cursor: pointer;
 	position: absolute;
 	background-color: rgb(0,0,0,0);
-	top: 43%;
-	padding: 10px;
-	margin: 10px;
+	bottom: 50%;
+	width: 3%;
+	margin: 1%;
 	transition: 0.6s ease;
 	border: none;
 	outline: none;
+	box-shadow: none;
 	user-select: none;
 	border-radius: 10px;
 }
 
-.prev-img {
-	background: url(images/vemos-arrow2-L.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-	transition: ease 0.5s;
+.prev > i {
+	padding: 0px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
-.next-img {
-	background: url(images/vemos-arrow2-R.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-	transition: ease 0.5s;
+.next > i {
+	padding: 0px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .next {

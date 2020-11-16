@@ -21,6 +21,16 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.backgrounded
+{
+	position: absolute;
+	height: 290px;
+	width: 100%;
+	overflow: hidden;
+	-webkit-filter: brightness(30%);
+    z-index: -100;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}

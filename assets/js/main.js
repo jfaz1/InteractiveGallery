@@ -183,3 +183,59 @@
 			});
 
 })(jQuery);
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+const mySlides = document.querySelector('.my-slides');
+const myImages = document.querySelectorAll('.my-slides img');
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+let counter = 1;
+
+const size = myImages[0].clientWidth;
+
+mySlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+next.addEventListener('click',()=>{
+  if (counter >= myImages.length -1) return;
+  mySlides.style.transition = "transform 2s ease-in-out";
+  counter++;
+  mySlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  console.log(counter);
+})
+
+prev.addEventListener('click',()=>{
+  if (counter <= 0) return;
+  mySlides.style.transition = "transform 2s ease-in-out";
+  counter--;
+  mySlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  console.log(counter);
+})
+
+mySlides.addEventListener('transitionend', () => {
+  if(myImages[counter].id === 'firstclone'){
+    mySlides.style.transition = 'none';
+    counter = myImages.length -2;
+    mySlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  if(myImages[counter].id === 'lastclone'){
+    mySlides.style.transition = 'none';
+    counter = myImages.length - counter;
+    mySlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+})
